@@ -15,6 +15,8 @@ jobs:
         with:
           java-version: 20
           distribution: zulu
+      - name: Setup file perm
+        run: chmod a+x ./gradlew
 
       - name: Build
         uses: gradle/gradle-build-action@v2.4.0
