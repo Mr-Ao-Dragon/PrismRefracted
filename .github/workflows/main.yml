@@ -15,6 +15,7 @@ jobs:
         with:
           java-version: 20
           distribution: zulu
+
       - name: Setup file perm
         run: chmod a+x ./gradlew
 
